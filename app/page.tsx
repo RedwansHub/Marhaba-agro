@@ -1,27 +1,39 @@
-import Image from "next/image";
+import React from 'react'
+import AgroNavbar from './components/AgroNavbar'
+import AgroHero from './components/AgroHero'
+import AgroHighlights from './components/AgroHighlights'
+import AgroFooter from './components/AgroFooter'
 
-export default function Home() {
+const MarhabaAgroPage = () => {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center font-sans bg-background">
-      <main className="flex flex-1 w-full  flex-col items-center justify-center py-32 px-16 ">
-         {/* <Link href="/marhaba-agro" className="flex items-center gap-3"> */}
-          <Image 
-            src="/Logo/marhabaAgro.svg" 
-            width={400} 
-            height={72} 
-            alt="Marhaba Agro" 
-            className={`cursor-pointer transition-all `} 
-          />
-        {/* </Link> */}
-          <p className="max-w-md text-lg leading-8 text-zinc-600 pt-6 dark:text-zinc-400">
-            Cultivating the Future of Somalia’s Agribusiness.
-          </p>
-        <div className="flex pt-12 flex-col items-center gap-1 text-center">
-          <h1 className="max-w-xs text-xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            Coming Soon 
-          </h1>
+    <div className="bg-background min-h-screen">
+      <AgroNavbar />
+      <main>
+        {/* Full Screen Impact Hero */}
+        <AgroHero />
+        
+        {/* Home Overview / Highlights */}
+        <AgroHighlights />
+        
+        {/* Call to Action Section */}
+        <div className="bg-[#1A6D5E] py-24 text-center">
+          <div className="max-w-4xl mx-auto px-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Ready to transform the future of Somali agriculture?</h2>
+            <p className="text-white/80 text-xl font-light mb-12">
+              Join us in our mission to bring sustainable, tech-driven farming to Somalia. Whether as a partner, client, or team member, let's grow together.
+            </p>
+            <a 
+              href="/marhaba-agro/contact"
+              className="inline-block bg-[#BF9B30] hover:bg-[#A68628] text-white px-12 py-5 rounded-full font-bold text-xl transition-all shadow-2xl"
+            >
+              Get Started Today
+            </a>
+          </div>
         </div>
       </main>
+      <AgroFooter />
     </div>
-  );
+  )
 }
+
+export default MarhabaAgroPage
