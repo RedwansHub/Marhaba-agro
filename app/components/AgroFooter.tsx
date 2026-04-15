@@ -16,18 +16,18 @@ const AgroFooter = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           
           {/* Brand Info */}
-          <div className="space-y-6 max-w-xl lg:col-span-2">
+          <div className="space-y-6 lg:max-w-md lg:col-span-2">
             <Link href="/">
               <Image src="/Logo/marhabaAgro.svg" width={220} height={50} alt="Marhaba Agro" className="brightness-0 invert cursor-pointer" />
             </Link>
-            <p className="text-gray-400 text-xs mt-3 leading-relaxed">
-              Leading the way in sustainable livestock farming and innovative agribusiness solutions in Somalia. A subsidiary of the Marhaba Group.
+            <p className="text-gray-400 text-xs mt-3  leading-relaxed">
+              Leading the way in sustainable livestock farming and innovative agribusiness solutions in Somalia.
             </p>
             <div className="flex gap-4">
               <AiFillFacebook size={24} className="hover:text-[#BF9B30] cursor-pointer transition-colors" />
               <AiFillInstagram size={24} className="hover:text-[#BF9B30] cursor-pointer transition-colors" />
-              <AiFillLinkedin size={24} className="hover:text-[#BF9B30] cursor-pointer transition-colors" />
-              <AiFillTwitterSquare size={24} className="hover:text-[#BF9B30] cursor-pointer transition-colors" />
+              {/* <AiFillLinkedin size={24} className="hover:text-[#BF9B30] cursor-pointer transition-colors" />
+              <AiFillTwitterSquare size={24} className="hover:text-[#BF9B30] cursor-pointer transition-colors" /> */}
             </div>
           </div>
 
@@ -36,11 +36,11 @@ const AgroFooter = () => {
             <div className='w-full'>
               <h4 className="text-lg font-bold mb-6 border-b border-[#BF9B30] pb-2 inline-block">Quick Links</h4>
               <ul className="space-y-4 text-gray-400 text-sm">
-                <li><Link href="/marhaba-agro" className="hover:text-[#BF9B30] transition-colors">Home</Link></li>
-                <li><Link href="/marhaba-agro/about" className="hover:text-[#BF9B30] transition-colors">About Us</Link></li>
-                <li><Link href="/marhaba-agro/services" className="hover:text-[#BF9B30] transition-colors">Our Services</Link></li>
-                <li><Link href="/marhaba-agro/farm" className="hover:text-[#BF9B30] transition-colors">Our Farm</Link></li>
-                <li><Link href="/marhaba-agro/contact" className="hover:text-[#BF9B30] transition-colors">Contact Us</Link></li>
+                <li><Link href="/marhaba-agro" className="hover:text-white transition-colors">Home</Link></li>
+                <li><Link href="/marhaba-agro/about" className="hover:text-white transition-colors">About Us</Link></li>
+                <li><Link href="/marhaba-agro/services" className="hover:text-white transition-colors">Our Services</Link></li>
+                <li><Link href="/marhaba-agro/farm" className="hover:text-white transition-colors">Our Farm</Link></li>
+                <li><Link href="/marhaba-agro/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
               </ul>
             </div>
 
@@ -58,7 +58,7 @@ const AgroFooter = () => {
                 </li>
                 <li className="flex flex-col">
                   <span className="text-white font-medium">Phone</span>
-                  <span>+252 61XXXXXXX</span>
+                  <span>+252 614880543</span>
                 </li>
               </ul>
             </div>

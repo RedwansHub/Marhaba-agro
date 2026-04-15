@@ -3,48 +3,53 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { CamelIcon, AgroColors, InnovationIcon, SustainabilityIcon, ExcellenceIcon } from './AgroIcons';
 import Reveal from '@/app/components/Motion/Reveal';
-import { AnimateDown, AnimateZoomIn } from '@/app/components/Motion/Animation';
+import { AnimateDown, AnimateRight, AnimateZoomIn } from '@/app/components/Motion/Animation';
 import Link from 'next/link';
+import { GiSheep } from 'react-icons/gi';
+import { PiFarmFill } from 'react-icons/pi';
+import Image from 'next/image';
 
 const AgroHero = () => {
   return (
-    <section id="home" className="relative min-h-screen w-full overflow-hidden flex flex-col justify-center pt-20">
+    <section id="home" className="relative min-h-screen w-full overflow-hidden flex flex-col justify-center lg:pt-20 pt-44 pb-8">
       {/* Background Image with Teal Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         <div 
-          className="absolute inset-0 bg-gradient-from-b from-red-400 "
-          // style={{ backgroundImage: "url('/Images/Agro/hero.png')" }}
-        />
-        <div 
           className="absolute inset-0 opacity-80"
-          style={{ background: `linear-gradient(135deg, ${AgroColors.primary} 40%, transparent 100%)` }}
+          style={{ background: `linear-gradient(135deg, ${AgroColors.bgDark} 40%, ${AgroColors.primary} 100%)` }}
         />
       </div>
 
       {/* Ghost Branding Waterman */}
-      <div className="absolute right-[-10%] bottom-[5%] opacity-10 pointer-events-none -rotate-45">
-        <CamelIcon className="w-[800px] h-[800px]" color="white" />
+      <div className="absolute lg:left-[-10%] left-[10%] lg:bottom-[5%] bottom-[-35%] opacity-5 pointer-events-none lg:rotate-45 -rotate-45 lg:-translate-x-20">
+        <CamelIcon className="lg:w-[650px] w-[550px] h-[650px]" color="white" />
+        {/* <Image src={''} alt=''/> */}
+        
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-white w-full">
-        <div className="max-w-3xl mb-16">
-          <Reveal>
-            <h1 className="text-3xl md:text-6xl font-bold leading-tight mb-8">
-              Cultivating a <span className="text-[#BF9B30]">Resilient</span> Future for Somalia.
-            </h1>
-          </Reveal>
+      <div className="relative z-10 max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 h-fit lg:px-12 px-6  text-white w-full">
+        <div className="h-full justify-center items-start flex  flex-col w-full">
+          <div>
+            <Reveal>
+              <h1 className="text-4xl md:text-5xl font-bold leading-tight lg:mb-8 mb-4">
+                The Future of Integrated <span className="text-[#eac454]">Agribusiness</span> in Somalia.
+              </h1>
+            </Reveal>
+          </div>
           
-          <AnimateDown delay={0.5}>
-            <p className="text-lg md:text-lg text-gray-100/50 mb-12 leading-relaxed font-light max-w-2xl">
-              Revolutionizing 150,000 m² of land through a high-tech, integrated ecosystem of year-round crop production and sustainable livestock breeding.
-            </p>
-          </AnimateDown>
+          <div>
+            <AnimateDown delay={0.8}>
+              <p className="text-base md:text-lg text-gray-100/50 lg:mb-12 mb-8 leading-relaxed font-light lg:max-w-2xl">
+                Revolutionizing 150,000 m² of land through a high-tech, integrated ecosystem of year-round crop production and sustainable livestock breeding.
+              </p>
+            </AnimateDown>
+          </div>
 
           <div  className="flex flex-wrap gap-3">
             <AnimateZoomIn delay={0.8}>
               <Link 
                 href="/farm"
-                className="inline-block bg-[#BF9B30] hover:bg-[#A68628] text-white px-10 py-4 rounded-full font-semibold text-lg transition-all transform "
+                className="inline-block bg-[#F6B923]/80 hover:bg-[#F6B923] text-black px-8 lg:px-6 lg:py-3 py-2 rounded-full font-semibold lg:text-lg text-base transition-all transform "
               >
                 Explore Our Farm
               </Link>
@@ -53,27 +58,20 @@ const AgroHero = () => {
           </div>
         </div>
 
-        {/* Feature Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-          <FeatureCard 
-            icon={<InnovationIcon color="white" />}
-            title="Smart Greenhouse Systems"
-            desc="Precision farming for year-round consistency and quality yields."
-            delay={1.2}
-          />
-          <FeatureCard 
-            icon={<CamelIcon className="w-10 h-10" color="white" />}
-            title="Elite Livestock Breeding"
-            desc="High-quality stock supported by integrated, on-site fodder production."
-            delay={1.4}
-          />
-          <FeatureCard 
-            icon={<SustainabilityIcon color="white" />}
-            title="High-Yield Sustainable Crops"
-            desc="Nutrient-rich produce grown with maximum solar-powered efficiency."
-            delay={1.6}
-          />
-        </div>
+          <div className='w-full flex gap-3 h-fit items-end justify-end'>
+            <AnimateRight delay={1.2}>
+              <div className='rounded-2xl overflow-hidden'>
+                <Image 
+                  src="/farm/Fodder & Field Crops/Super Napier grass.png" 
+                  width={420}
+                  height={200}
+                  alt="Somali Goats Gallery" 
+                  className="object-cover  transition-transform duration-700 hover:scale-105 " 
+                />
+              </div>
+            </AnimateRight>
+          </div>
+        
       </div>
 
       {/* Scroll Indicator */}
@@ -95,18 +93,21 @@ const AgroHero = () => {
   );
 };
 
-const FeatureCard = ({ icon, title, desc, delay }: { icon: React.ReactNode, title: string, desc: string, delay: number }) => (
+export const FeatureCard = ({ icon, title, desc, delay }: { icon: React.ReactNode, title: string, desc: string, delay: number }) => (
   <motion.div 
     initial={{ opacity: 0, y: 30 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8, delay }}
-    className="bg-white/5 backdrop-blur-lg border border-white/20 p-8 rounded-lg cursor-pointer hover:bg-white/20 transition-all group"
+    className="bg-[#F5F5F5] backdrop-blur-lg border border-primary/20 shadow-md lg:p-8 p-5 rounded-lg cursor-pointer hover:bg-primary hover:scale-105 duration-500 ease-in-out transition-all group"
   >
-    <div className="mb-6 p-3 bg-[#059E50]/50 rounded-xl inline-block group-hover:bg-[#059E50] transition-colors">
+    <div className={`lg:mb-6 mb-2 lg:p-3 p-2 bg-[#059E50] rounded-xl inline-block duration-500 ease-in-out transition-colors 
+        ${title == 'Fodder & Field Crops' ? 'group-hover:bg-[#F6B923]' 
+        : title == 'Livestock Farming' ? 'group-hover:bg-[#202020]'
+        : 'group-hover:bg-[#F5F5F5]'}`}>
       {icon}
     </div>
-    <h3 className="text-xl font-bold mb-3">{title}</h3>
-    <p className="text-gray-200/75 text-sm leading-relaxed font-light">{desc}</p>
+    <h3 className="text-xl group-hover:text-white font-semibold mb-3">{title}</h3>
+    <p className="group-hover:text-gray-200/75 text-black/50 text-sm leading-relaxed font-light">{desc}</p>
   </motion.div>
 );
 

@@ -2,12 +2,16 @@
 
 :root {
   --background: #ffffff;
+  --primary: #059E50;
+  --secondary: #F6B923;
   --foreground: #171717;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: #059E50;
+  --color-secondary: #F6B923;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -29,7 +33,7 @@ body {
   --purple: #8855ff;
   --red: #ff0055;
   --orange: #ee4444;
-  --yellow: #ffcc00;
+  --yellow: #F6B923;
   --mustard: #ffaa00;
   --accent: var(--black);
 

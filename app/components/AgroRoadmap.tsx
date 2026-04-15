@@ -70,8 +70,8 @@ const AgroRoadmap = () => {
                   <div className="absolute left-[31px] md:left-1/2 w-4 h-4 rounded-full bg-white border-4 border-[#BF9B30] -translate-x-1/2 z-10 hidden md:block" />
 
                   {/* Content Box */}
-                  <div className={`w-full md:w-1/2 flex flex-col ${index % 2 === 0 ? 'md:items-end md:text-right' : 'md:items-start md:text-left'}`}>
-                    <div className="bg-[#F5F5F5] p-10 rounded-[2.5rem] border border-gray-100 hover:shadow-2xl transition-all duration-500 group w-full">
+                  <div className={`w-full hover:shadow-2xl  md:w-1/2 flex flex-col ${index % 2 === 0 ? 'md:items-end md:text-right' : 'md:items-start md:text-left'}`}>
+                    <div className="bg-[#F5F5F5] p-10 rounded-xl border border-gray-100 transition-all duration-500 group w-full">
                       <div className={`inline-block px-6 py-2 rounded-full text-sm font-bold tracking-widest uppercase mb-6 text-white`} style={{ backgroundColor: item.color }}>
                         {item.period} ({item.timeframe})
                       </div>
