@@ -31,14 +31,17 @@ export default function AgroNavbar() {
   }, [open])
 
   const isHome = pathname === '/'
+  const isTransparentMode = isHome && !scrolled;
 
   const textColor =
-    isHome && !scrolled ? 'text-white' : 'text-black'
+    isHome && !scrolled ? 'text-white' 
+      : !isHome && scrolled 
+      ? 'text-white'
+      : 'text-black'
 
-  const logo =
-    isHome && !scrolled
+    const logo = (scrolled || (isHome && !scrolled))
       ? '/Logo/light-agro-logo.svg'
-      : '/Logo/dark-agro-logo.svg'
+      : '/Logo/dark-agro-logo.svg';
 
   return (
     <>
@@ -57,8 +60,8 @@ export default function AgroNavbar() {
             <Image
               src={logo}
               alt="Agro Logo"
-              width={170}
-              height={40}
+              width={220}
+              height={50}
               priority
             />
           </Link>

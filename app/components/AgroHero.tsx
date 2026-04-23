@@ -40,7 +40,7 @@ const AgroHero = () => {
           <div>
             <AnimateDown delay={0.8}>
               <p className="text-base md:text-lg text-gray-100/50 lg:mb-12 mb-8 leading-relaxed font-light lg:max-w-2xl">
-                Revolutionizing 150,000 m² of land through a high-tech, integrated ecosystem of year-round crop production and sustainable livestock breeding.
+                Transforming Somali agriculture by bridging modern technology with traditional practices to create a sustainable, year-round ecosystem of high-quality crop production, livestock breeding, and food security.
               </p>
             </AnimateDown>
           </div>

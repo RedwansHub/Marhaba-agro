@@ -5,6 +5,7 @@ import AgroRoadmap from '../components/AgroRoadmap'
 import AgroFooter from '../components/AgroFooter'
 import Reveal from '@/app/components/Motion/Reveal'
 import { CamelIcon } from '../components/AgroIcons'
+import AgroTeam from '../components/AgroTeam'
 
 const AboutPage = () => {
   return (
@@ -29,6 +30,8 @@ const AboutPage = () => {
         </div>
 
         <AgroAbout />
+        
+        <AgroTeam />
         
         {/* Growth Strategy / Roadmap */}
         <AgroRoadmap />

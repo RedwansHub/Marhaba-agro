@@ -15,7 +15,7 @@ const ContactPage = () => {
           <div className="absolute right-[10%] top-[-10%] opacity-10 pointer-events-none rotate-45">
             <IntegrityIcon color="white" />
           </div>
-          <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+          <div className="max-w-7xl mx-auto  px-6 md:px-12 relative z-10">
             <Reveal>
               <h1 className="text-3xl md:text-5xl font-bold text-white mb-6">Contact Us</h1>
             </Reveal>

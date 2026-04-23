@@ -14,7 +14,7 @@ const ServicesPage = () => {
       <AgroNavbar />
       <main className="py-20">
         {/* Page Header */}
-        <div className="bg-[#BF9B30] py-24 relative overflow-hidden">
+        <div className="bg-[#F6B923] py-24 relative overflow-hidden">
           <div className="absolute right-[5%] bottom-[-20%] opacity-10 pointer-events-none -rotate-12">
             <ExcellenceIcon />
           </div>

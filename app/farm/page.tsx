@@ -17,7 +17,7 @@ const FarmPage = () => {
           </div>
           <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
             <Reveal>
-              <h1 className="text-2xl md:text-4xl font-bold text-white mb-6">Our Farm Facilities</h1>
+              <h1 className="text-2xl md:text-4xl font-bold text-white mb-6">Our Farm</h1>
             </Reveal>
             <Reveal delay={0.2}>
               <p className="text-lg text-white/60 max-w-2xl font-light">

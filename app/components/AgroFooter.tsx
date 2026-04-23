@@ -18,9 +18,9 @@ const AgroFooter = () => {
           {/* Brand Info */}
           <div className="space-y-6 lg:max-w-md lg:col-span-2">
             <Link href="/">
-              <Image src="/Logo/marhabaAgro.svg" width={220} height={50} alt="Marhaba Agro" className="brightness-0 invert cursor-pointer" />
+              <Image src="/Logo/marhabaAgro.svg" width={220} height={50} alt="Marhaba Agro" className=" cursor-pointer" />
             </Link>
-            <p className="text-gray-400 text-xs mt-3  leading-relaxed">
+            <p className="text-gray-400 text-sm mt-3  leading-relaxed">
               Leading the way in sustainable livestock farming and innovative agribusiness solutions in Somalia.
             </p>
             <div className="flex gap-4">
@@ -50,7 +50,7 @@ const AgroFooter = () => {
               <ul className="space-y-4 text-gray-400 text-sm">
                 <li className="flex flex-col">
                   <span className="text-white font-medium">Headquarters</span>
-                  <span>Mogadishu, Somalia</span>
+                  <span>Bayutl Ammaan, Deynile, Banaadir Mogadishu, Somalia</span>
                 </li>
                 <li className="flex flex-col">
                   <span className="text-white font-medium">Email</span>
