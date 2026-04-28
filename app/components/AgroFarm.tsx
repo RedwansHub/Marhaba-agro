@@ -18,35 +18,25 @@ type GalleryItem = {
 const ALL_ASSETS: GalleryItem[] = [
   // Greenhouse Zone
   { id: 'gh-1', type: 'image', thumbnail: '/farm/greenhouse/Greenhouse.jpg', src: '/farm/greenhouse/Greenhouse.jpg', caption: 'State-of-the-Art Greenhouse', category: 'greenhouse' },
+  { id: 'gh-1', type: 'image', thumbnail: '/farm/greenhouse/Greenhouse 2.png', src: '/farm/greenhouse/Greenhouse 2.png', caption: 'Greenhouse', category: 'greenhouse' },
   { id: 'gh-2', type: 'image', thumbnail: '/farm/greenhouse/Greenhouse-Cucumbers.jpg', src: '/farm/greenhouse/Greenhouse-Cucumbers.jpg', caption: 'Cucumber Cultivation', category: 'greenhouse' },
   { id: 'gh-3', type: 'image', thumbnail: '/farm/greenhouse/Inside Greenhouse.jpg', src: '/farm/greenhouse/Inside Greenhouse.jpg', caption: 'Controlled Environment', category: 'greenhouse' },
-  { id: 'gh-4', type: 'image', thumbnail: '/farm/greenhouse/bell peper.png', src: '/farm/greenhouse/bell peper.png', caption: 'Bell Pepper Rows', category: 'greenhouse' },
-  { id: 'gh-5', type: 'image', thumbnail: '/farm/greenhouse/tomatoes.jpg', src: '/farm/greenhouse/tomatoes.jpg', caption: 'Tomato Plantation', category: 'greenhouse' },
-  { id: 'gh-6', type: 'image', thumbnail: '/farm/greenhouse/tomatoes 2.png', src: '/farm/greenhouse/tomatoes 2.png', caption: 'Ripening Produce', category: 'greenhouse' },
   { id: 'gh-7', type: 'image', thumbnail: '/farm/greenhouse/salad.jpg', src: '/farm/greenhouse/salad.jpg', caption: 'Leafy Green Production', category: 'greenhouse' },
-  { id: 'gh-8', type: 'image', thumbnail: '/farm/greenhouse/salad.png', src: '/farm/greenhouse/salad.png', caption: 'Vibrant Greens', category: 'greenhouse' },
   { id: 'gh-9', type: 'image', thumbnail: '/farm/greenhouse 1.png', src: '/farm/greenhouse 1.png', caption: 'External Infrastructure', category: 'greenhouse' },
   { id: 'gh-10', type: 'video', thumbnail: '/farm/greenhouse 3.jpeg', src: '/farm/greenhouse 2.mp4', caption: 'Greenhouse Operations', category: 'greenhouse' },
 
   // Livestock Zone
-  { id: 'ls-1', type: 'image', thumbnail: '/farm/Livestock/Goats in barn.jpeg', src: '/farm/Livestock/Goats in barn.jpeg', caption: 'Modern Stall Systems', category: 'livestock' },
-  { id: 'ls-2', type: 'video', thumbnail: '/farm/goats 2.jpeg', src: '/farm/Livestock/Goats Walking video.mp4', caption: 'Active Herd Management', category: 'livestock' },
-  { id: 'ls-3', type: 'video', thumbnail: '/farm/Livestock/Goats in barn.jpeg', src: '/farm/goats 1.mp4', caption: 'Breeding Stock Showcase', category: 'livestock' },
-  { id: 'ls-4', type: 'image', thumbnail: '/farm/farm 1.jpeg', src: '/farm/farm 1.jpeg', caption: 'Poultry Housing Facilities', category: 'livestock' },
+  { id: 'ls-2', type: 'video', thumbnail: '/farm/goats 2.jpeg', src: '/farm/Livestock/Barn Video.mp4', caption: 'Active Herd Management', category: 'livestock' },
+  { id: 'ls-1', type: 'image', thumbnail: '/farm/Livestock/Inside barn 2.jpeg', src: '/farm/Livestock/Inside barn 2.jpeg', caption: 'Inside the Barn', category: 'livestock' },
   { id: 'ls-5', type: 'image', thumbnail: '/farm/goats 2.jpeg', src: '/farm/goats 2.jpeg', caption: 'Elite Goat Breeding', category: 'livestock' },
+  { id: 'ls-3', type: 'video', thumbnail: '/farm/Livestock/Goats in barn.jpeg', src: '/farm/Livestock/Livestock Goats.mp4', caption: 'Livestock Goats', category: 'livestock' },
 
   // Fodder & Crops Zone
-  { id: 'fd-1', type: 'image', thumbnail: '/farm/Fodder & Field Crops/Super Napier grass.png', src: '/farm/Fodder & Field Crops/Super Napier grass.png', caption: 'Super Napier Growth', category: 'fodder' },
+  { id: 'fd-8', type: 'video', thumbnail: '/farm/Fodder & Field Crops/Super Napier grass.png', src: '/farm/Fodder & Field Crops/Grass video.mp4', caption: 'Harvesting Fodder', category: 'fodder' },
   { id: 'fd-2', type: 'image', thumbnail: '/farm/Fodder & Field Crops/alfalfa grass 2.jpg', src: '/farm/Fodder & Field Crops/alfalfa grass 2.jpg', caption: 'Alfalfa Fields', category: 'fodder' },
-  { id: 'fd-3', type: 'image', thumbnail: '/farm/Fodder & Field Crops/maize crop.png', src: '/farm/Fodder & Field Crops/maize crop.png', caption: 'Somali Maize Variety', category: 'fodder' },
-  { id: 'fd-4', type: 'image', thumbnail: '/farm/Fodder & Field Crops/maize crop 2.png', src: '/farm/Fodder & Field Crops/maize crop 2.png', caption: 'Bountiful Harvests', category: 'fodder' },
+  { id: 'fd-1', type: 'image', thumbnail: '/farm/Fodder & Field Crops/Super Napier grass.png', src: '/farm/Fodder & Field Crops/Super Napier grass.png', caption: 'Super Napier Growth', category: 'fodder' },
   { id: 'fd-5', type: 'image', thumbnail: '/farm/Fodder & Field Crops/seseame crop.jpg', src: '/farm/Fodder & Field Crops/seseame crop.jpg', caption: 'Sesame Production', category: 'fodder' },
-  { id: 'fd-6', type: 'image', thumbnail: '/farm/Fodder & Field Crops/sudan grass.jpg', src: '/farm/Fodder & Field Crops/sudan grass.jpg', caption: 'Sudan Grass Cycles', category: 'fodder' },
-  { id: 'fd-7', type: 'image', thumbnail: '/farm/Fodder & Field Crops/sudan grass 2.png', src: '/farm/Fodder & Field Crops/sudan grass 2.png', caption: 'Feed Consistency', category: 'fodder' },
-  { id: 'fd-8', type: 'video', thumbnail: '/farm/Fodder & Field Crops/Super Napier grass.png', src: '/farm/Fodder & Field Crops/Grass Farm.mp4', caption: 'Irrigation Mastery', category: 'fodder' },
-  { id: 'fd-9', type: 'video', thumbnail: '/farm/grass 1.png', src: '/farm/Fodder & Field Crops/Naiper grass vid.mp4', caption: 'Harvesting Fodder', category: 'fodder' },
   { id: 'fd-10', type: 'image', thumbnail: '/farm/grass 1.png', src: '/farm/grass 1.png', caption: 'Sustainable Forage', category: 'fodder' },
-  { id: 'fd-11', type: 'video', thumbnail: '/Images/Agro/farm-infra.png', src: '/farm/farm 2.mp4', caption: 'Field Infrastructure', category: 'fodder' },
 ];
 
 const AgroFarm = () => {

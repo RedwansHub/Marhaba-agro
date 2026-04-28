@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Reveal from '@/app/components/Motion/Reveal';
 import { AgroColors } from './AgroIcons';
 import { AiOutlineMail, AiOutlinePhone, AiOutlineEnvironment } from 'react-icons/ai';
+import { PiFarmLight } from 'react-icons/pi';
 
 const AgroContact = () => {
   return (
@@ -26,19 +27,25 @@ const AgroContact = () => {
               <ContactInfoItem 
                 icon={<AiOutlineMail size={24} />}
                 title="Email Us"
-                content="agro@marhabaagro.com"
+                content="marhabaagro@gmail.com"
                 delay={0.3}
               />
               <ContactInfoItem 
                 icon={<AiOutlinePhone size={24} />}
                 title="Call Us"
-                content="+252 614880543"
+                content="+252 61 4880543"
                 delay={0.4}
               />
               <ContactInfoItem 
                 icon={<AiOutlineEnvironment size={24} />}
                 title="Visit Our Office"
                 content="A-6-4, TCC, Maka Almukarama Street, Mogadishu - Somalia"
+                delay={0.5}
+              />
+              <ContactInfoItem 
+                icon={<PiFarmLight  size={24} />}
+                title="Our Farm"
+                content="Bayutl Ammaan, Deynile, Banaadir Mogadishu, Somalia"
                 delay={0.5}
               />
             </div>

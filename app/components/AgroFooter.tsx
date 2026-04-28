@@ -13,7 +13,7 @@ const AgroFooter = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           
           {/* Brand Info */}
           <div className="space-y-6 lg:max-w-md lg:col-span-2">
@@ -31,18 +31,18 @@ const AgroFooter = () => {
             </div>
           </div>
 
-          <div className='flex gap-5 w-full'>
             {/* Quick Links */}
             <div className='w-full'>
               <h4 className="text-lg font-bold mb-6 border-b border-[#BF9B30] pb-2 inline-block">Quick Links</h4>
               <ul className="space-y-4 text-gray-400 text-sm">
-                <li><Link href="/marhaba-agro" className="hover:text-white transition-colors">Home</Link></li>
-                <li><Link href="/marhaba-agro/about" className="hover:text-white transition-colors">About Us</Link></li>
-                <li><Link href="/marhaba-agro/services" className="hover:text-white transition-colors">Our Services</Link></li>
-                <li><Link href="/marhaba-agro/farm" className="hover:text-white transition-colors">Our Farm</Link></li>
-                <li><Link href="/marhaba-agro/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
+                <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
+                <li><Link href="/about" className="hover:text-white transition-colors">About Us</Link></li>
+                <li><Link href="/services" className="hover:text-white transition-colors">Our Services</Link></li>
+                <li><Link href="/farm" className="hover:text-white transition-colors">Our Farm</Link></li>
+                <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
               </ul>
             </div>
+          <div className='flex gap-5 w-full'>
 
             {/* Contact Details */}
             <div>
@@ -54,11 +54,11 @@ const AgroFooter = () => {
                 </li>
                 <li className="flex flex-col">
                   <span className="text-white font-medium">Email</span>
-                  <span>info@marhabaagro.so</span>
+                  <span>marhabaagro@gmail.com</span>
                 </li>
                 <li className="flex flex-col">
                   <span className="text-white font-medium">Phone</span>
-                  <span>+252 614880543</span>
+                  <span>+252 61 4880543</span>
                 </li>
               </ul>
             </div>

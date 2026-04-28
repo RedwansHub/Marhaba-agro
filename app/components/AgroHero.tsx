@@ -13,16 +13,18 @@ const AgroHero = () => {
   return (
     <section id="home" className="relative min-h-screen w-full overflow-hidden flex flex-col justify-center lg:pt-20 pt-44 pb-8">
       {/* Background Image with Teal Gradient Overlay */}
-      <div className="absolute inset-0 z-0">
-        <div 
-          className="absolute inset-0 opacity-80"
-          style={{ background: `linear-gradient(135deg, ${AgroColors.bgDark} 40%, ${AgroColors.primary} 100%)` }}
-        />
-      </div>
+        <div className="absolute inset-0 z-0">
+              <div 
+                className="absolute inset-0 opacity-80"
+                style={{ background: `linear-gradient(135deg, ${AgroColors.bgDark} 40%, ${AgroColors.primary} 100%)` }}
+                />
+        </div>
 
       {/* Ghost Branding Waterman */}
       <div className="absolute lg:left-[-10%] left-[10%] lg:bottom-[5%] bottom-[-35%] opacity-5 pointer-events-none lg:rotate-45 -rotate-45 lg:-translate-x-20">
-        <CamelIcon className="lg:w-[650px] w-[550px] h-[650px]" color="white" />
+        <Reveal>
+          <CamelIcon className="lg:w-[650px] w-[550px] h-[650px]" color="white" />
+        </Reveal>
         {/* <Image src={''} alt=''/> */}
         
       </div>

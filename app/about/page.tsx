@@ -31,7 +31,7 @@ const AboutPage = () => {
 
         <AgroAbout />
         
-        <AgroTeam />
+        {/* <AgroTeam /> */}
         
         {/* Growth Strategy / Roadmap */}
         <AgroRoadmap />

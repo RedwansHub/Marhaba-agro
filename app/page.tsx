@@ -198,7 +198,7 @@ const MarhabaAgroPage = () => {
               <Reveal delay={0.4}>
                 <Link 
                     href="/farm"
-                    className="inline-block bg-[#F6B923]/80 hover:bg-[#F6B923] text-black px-8 lg:px-6 lg:py-3 py-2 rounded-full font-semibold lg:text-lg text-base transition-all transform "
+                    className="inline-block bg-[#F6B923]/80 hover:bg-[#F6B923] text-black px-6  lg:py-2 py-2 rounded-full font-semibold lg:text-base text-base transition-all transform "
                   >
                     Explore Our Farm
                   </Link>
@@ -207,10 +207,10 @@ const MarhabaAgroPage = () => {
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                '/farm/greenhouse/Greenhouse-Cucumbers.jpg',
+                '/farm/greenhouse/Greenhouse 2.png',
                 '/farm/Livestock/Goats in barn.jpeg',
                 '/farm/Fodder & Field Crops/Super Napier grass.png',
-                '/farm/greenhouse/bell peper.png'
+                '/farm/greenhouse/Inside Greenhouse.jpg'
               ].map((img, i) => (
                 <Reveal key={i} delay={i * 0.1}>
                   <div className="aspect-square rounded-2xl overflow-hidden shadow-lg border-2 border-white/10">
