@@ -54,7 +54,7 @@ const AgroFooter = () => {
                 </li>
                 <li className="flex flex-col">
                   <span className="text-white font-medium">Email</span>
-                  <span>marhabaagro@gmail.com</span>
+                  <span>Marhabaagroso@gmail.com</span>
                 </li>
                 <li className="flex flex-col">
                   <span className="text-white font-medium">Phone</span>
